@@ -3,22 +3,31 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Задание 1</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<title>Задание 2</title>
 	</head>
 	<body>
-		<div class="code">
-		<img id="logo" src="image3.png" alt="Наш лого">
-		<header>Название сайта</header>
-		<nav>
-			
-		</nav>
-		</div>
+		<header>
+      <div class="header-content">
+        <img src="image3.png" alt="logo" class="logo">
+        <div class="name-site">название сайта</div>
+        <div class="header-links-nav">
+          <nav>
+            <a href="#link">ссылки</a>
+            <a href="#table">таблица</a>
+            <a href="#forma">форма</a>
+            <a href="#footer">footer</a>
+          </nav>
+        </div>
+      </div>
+    </header>
 		<div class="call">
 			<div class="inner">
-				<ul id="menu">
+				<div class="link" id="link">
+				<ul>
 					<li><a href="http://www.kubsu.ru/index.php" target="_blank">КубГу</a></li>
 					<li id="KUBIK"><a href="https://www.kubsu.ru/index.php" target="_blank">КубГу</a></li>
-					<li id="top"><a href="http://www.kubsu.ru/index.php"><img src="image.jpg" alt="image" width="300" height="300"/></a></li>
+					<li id="top"><a href="http://www.kubsu.ru/index.php"><img src="image2.jpg" alt="image" width="300" height="300"/></a></li>
 					<li><a href="/about.html">Ссылка на внутреннюю страницу</a></li>
 					<li><a href="/">Ссылка на главную страницу</a></li>
 					<li><a href="#KUBIK">Ссылка на фрагмент текущей страницы</a></li>
@@ -50,21 +59,56 @@
 					</li>
 					<li><a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Ссылка на файл на сервер FTP с авторизацией</a></li>
 					</ul>
-				<table>
-      <tr>
-        <th>Колонка 1</th>
-        <th>Колонка 2</th>
-      </tr>
-      <tr>
-        <td colspan="2">Ячейка 11 объединенная с 12</td>
-      </tr>
-      <tr>
-        <td>Ячейка 21</td>
-        <td>Ячейка 22</td>
-      </tr>
-    </table>
+				</div>
+				<div class="inside-content" id="table">
+				 <table>
+          <caption>Таблица</caption>
+          <tbody>
+            <tr class="row-neChet">
+              <td>Колонка 1</td>
+              <td>Колонка 2</td>
+              <td>Колонка 3</td>
+              <td>Колонка 4</td>
+              <td>Колонка 5</td>
+            </tr>
+            <tr class="row-Chet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              <td> 4</td>
+              <td> 5</td>
+            </tr>
+            <tr class="row-neChet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              <td> 4</td>
+              <td> 5</td>
+            </tr>
+            <tr class="row-Chet" >
+              <td colspan="5" align="center">единое</td>
+              
+            </tr>
+            <tr class="row-neChet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              <td> 4</td>
+              <td> 5</td>
+            </tr>
+            <tr class="row-Chet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              <td> 4</td>
+              <td> 5</td>
+            </tr>
+          </tbody>
+        </table>
+				</div>
+				<div class="inside-content" id="forma">
 					<h2>Форма</h2>
-      <form action="https://www.example.com" method="POST"  id="forma">
+      <form action="https://www.example.com" method="POST">
         <label>
           ФИО:<br>
           <input name="field-name-1" placeholder="Данил Даниленко Данилович" type="name">
@@ -119,6 +163,11 @@
                <input type="submit" value="Отправить" />
       </form>
 			</div>
+			</div>
 		</div>
+		<footer class="footer" id="footer">
+    <p>Я — человек без амбиций: мне деньги не нужны. Главное, чтоб хватало на обычную жизнь</p>
+    <p>(с) Виталий Цаль</p>
+  </footer>
 	</body>
 </html>
