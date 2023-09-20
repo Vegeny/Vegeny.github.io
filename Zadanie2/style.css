@@ -29,10 +29,12 @@ header {
   display: inline;
   float: right;
   font-size: x-large;
+  max-width: 960px;
 }
 
 .inner {
   margin: 3% 10% 3% 10%;
+  max-width: 960px;
 }
 
  .link{
