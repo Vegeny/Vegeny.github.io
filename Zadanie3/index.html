@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Задание 3</title>
+  </head>
+  <body>
+    
+      <header class="header-content">
+        <div class="logo-nameSite">
+          <img src="image3.png" alt="logo" class="logo">
+          <div class="name-site">название сайта</div>
+        </div>
+        <div class="menu-links-nav">
+          <nav >
+            <ul class="links-content">
+              <a href="#link">ссылки</a>
+              <a href="#table">таблица</a>
+              <a href="#form">форма</a>
+              <a href="#footer">footer</a>
+            </ul>
+          </nav>
+        </div>
+        
+      </header>
+
+  <div class="flex-box">
+    <div class="links content-block flex-item-1" id="link">
+      <ul  class="center-both">
+				<li><a href="http://www.kubsu.ru/index.php" target="_blank">КубГу</a></li>
+				<li id="KUBIK"><a href="https://www.kubsu.ru/index.php" target="_blank">КубГу</a></li>
+				<li id="top"><a href="http://www.kubsu.ru/index.php"><img src="image2.jpg" alt="image" width="300" height="300"/></a></li>
+				<li><a href="/about.html">Ссылка на внутреннюю страницу</a></li>
+				<li><a href="/">Ссылка на главную страницу</a></li>
+				<li><a href="#KUBIK">Ссылка на фрагмент текущей страницы</a></li>
+				<li><a href="http://www.kubsu.ru/index.php?parametr1=p1&parametr2=p2&parametr3=p3" target="_blank">Ссылка с тремя параметрами в URL</a></li>
+				<li><a href="http://www.kubsu.ru/index.php?id=15" target="_blank">Ссылка с параметром id в URL</a></li>
+				<li><a href="./about.html">Относительная на страницу в текущем каталоге</a></li>
+				<li><a href="./about/page2.html">Относительная ссылка в каталоге about</a></li>
+				<li><a href="../page2.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+				<li><a href="../../katalog1.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+				<li>Контекстная в <a href="http://www.kubsu.ru/index.php" target="_blank">тексте</a> абзаца</li>
+				<li><a href="https://www.kubsu.ru/index.php#section-content">Ссылку на фрагмент страницы стороннего сайта</a></li>
+				<li>Ссылки из прямоугольных и круглых областей картинки
+					<br>
+					<img src="https://www.gamebyte.com/wp-content/uploads/2022/05/ac52805a-silent-hill-2-gb.jpg" alt="свинья" width="190" heigth="190" usemap="#mymap"/>
+					<map name="mymap">
+						<area shape="rect" coords="40, 25, 90, 150" href="https://www.meme-arsenal.com/memes/57b0e6c18cd5163b8f9722f06ba16e4a.jpg" alt="Прямоугольная область">
+						<area shape="circle" coords="100, 10, 25" href="https://www.denofgeek.com/wp-content/uploads/2022/10/Pyramid-Head-Silent-Hil.jpg?resize=768%2C432" alt="Круглая облать">
+					</map>
+				</li>
+				<li><a href>Ссылка с пустым href</a></li>
+				<li><a>Ссылка без href</a> </li>
+				<li><a href="https://ru.wikipedia.org/wiki/Silent_Hill_2" rel="nofollow" target="_blank">Ссылка, по которой запрещен переход поисковикам</a></li>
+				<li><!--noindex--><a href="https://ru.wikipedia.org/wiki/Survival_horror" target="_blank">Запрещенная для индексации поисковиками</a><!--/noindex--></li>
+				<li>
+					<ol>
+						<li><a href="#KUBIK" title="Ссылка на сайт кубгу">Гиперссылка</a></li>
+						<li><a href=#forma title="Ссылка на форму">Форма</a></li>
+					</ol>
+				</li>
+				<li><a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Ссылка на файл на сервер FTP с авторизацией</a></li>
+			</ul>
+    </div>
+    <div class="content-block flex-item-2" id="table">
+        <table>
+          <caption>Таблица</caption>
+          <tbody>
+            <tr class="row-neChet">
+              <td rowspan="6">Колонка 1</td>
+              <td>Колонка 2</td>
+              <td>Колонка 3</td>
+              <td>Колонка 4</td>
+              
+            </tr>
+            <tr class="row-Chet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              
+              
+            </tr>
+            <tr class="row-neChet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              
+              
+            </tr>
+            <tr class="row-Chet" >
+              <td colspan="5" align="center">единое</td>
+              
+            </tr>
+            <tr class="row-neChet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              
+              
+            </tr>
+            <tr class="row-Chet">
+              <td> 1</td>
+              <td> 2</td>
+              <td> 3</td>
+              
+              
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="content-block flex-item-3" id="form">
+      <h2>Форма</h2>
+          <form action="https://www.example.com" method="POST"  >
+            <label>
+              ФИО:<br>
+              <input name="field-name-1" placeholder="Иванов Иван Иванович" type="name">
+            </label><br>
+            <label>
+              Телефон:<br>
+                <input name="field-number" placeholder="+7 (999)-435-90-44" type="number">
+            </label><br>
+            <label>
+              e-mail:<br>
+              <input name="field-email" placeholder="opachki@gmail.com" type="email">
+           </label><br>
+           <label>
+            Дата рождения:<br>
+            <input name="field-date" value="2002-11-11" type="date">
+           </label><br>
+           Пол:<br>
+           <label>
+               <input type="radio" name="radio-group-2" value="М">
+               М
+           </label>
+           <label>
+               <input type="radio" name="radio-group-2" value="Ж">
+               Ж
+           </label>
+          </label><br>
+          <label>
+            Любимый язык программирования:
+            <br/>
+            <select name="field-name[]" multiple="multiple" size="5">
+              <option value="Значение 1" >Pascal</option>
+              <option value="Значение 2" >C</option>
+              <option value="Значение 3" >C++</option>
+              <option value="Значение 4">JavaScript</option>
+              <option value="Значение 5">PHP</option>
+              <option value="Значение 6">Python</option>
+              <option value="Значение 7">Java</option>
+              <option value="Значение 8">Haskel</option>
+              <option value="Значение 9">Clojure</option>
+              <option value="Значение 10">Prolog</option>
+              <option value="Значение 11">Scala</option>
+            </select>
+          </label><br>
+          <label>
+            Биография:<br>
+            <textarea name="bio"> </textarea>
+          </label><br>
+          С контрактом ознакомлен(а):<br>
+                   <label>
+                       <input type="checkbox" checked="checked" name="check-1">
+                   </label><br>
+                   <input type="submit" value="Отправить"/>
+          </form>
+    </div>
+  </div>
+  
+    </div>
+    <footer class="footer" id="footer">
+      <p>Я — человек без амбиций: мне деньги не нужны. Главное, чтоб хватало на обычную жизнь</p>
+    <p>(с) Виталий Цаль</p>
+    </footer>
+  </body>
+</html>

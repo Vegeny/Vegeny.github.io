@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  color: #0b0c10;
+}
+/*______________________________________________________*/
+body {
+  background-color: aliceblue;
+  overflow-x: hidden;
+}
+/*______________________________________________________*/
+.header-content {
+  background-color: cornflowerblue;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name-site {
+  font-size: x-large;
+  align-self: flex-end;
+}
+.logo {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 2%;
+}
+.menu-links {
+  margin: auto;
+  font-size: medium;
+  max-width: 960px;
+}
+.logo-nameSite {
+  width: 70%;
+  height: auto;
+  display: flex;
+  margin-bottom: 1vh;
+}
+.menu-links-nav {
+  padding-right: 3vw;
+  padding-top: 1vh;
+}
+
+/*______________________________________________________*/
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  gap: 2vh;
+  align-items: center;
+}
+.content-block {
+  background-color: cornflowerblue;
+  padding: 2%;
+  width: 70%;
+}
+
+.flex-item-1 {
+  order: 1;
+}
+.flex-item-2 {
+  order: 2;
+}
+.flex-item-3 {
+  order: 3;
+}
+/*______________________________________________________*/
+.row-neChet {
+  background-color: #7751a7;
+}
+.row-Chet {
+  background-color: #9e2057;
+}
+caption {
+  background-color: #da5757;
+}
+/*______________________________________________________*/
+.footer {
+  padding: 2vw;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
+@media screen and (max-width: 640px) {
+  .header-content {
+    background-color: initial;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .name-site {
+    font-size: x-large;
+    align-self: center;
+    background-color: cornflowerblue;
+  }
+  .logo-nameSite {
+    background-color: cornflowerblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2vh;
+  }
+  .menu-links-nav {
+    background-color: cornflowerblue;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 100%;
+  }
+  .links-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  /*______________________________________________________*/
+  .flex-item-2 {
+    order: 1;
+  }
+  .flex-item-1 {
+    order: 2;
+  }
+  .flex-item-3 {
+    order: 3;
+  }
+  .content-block {
+    background-color: cornflowerblue;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+    align-content: center;
+    width: 100%;
+  }
+  .links {
+    padding-left: initial;
+  }
+}
