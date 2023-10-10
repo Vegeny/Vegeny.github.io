@@ -5,42 +5,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    
     <title>Задание 4</title>
 
   </head>
   <body>
     
-      <header class="header-content mb-3">
-        <div class="container mx-auto">
+     <header class=" container-fluid">
           <div class="row">
-              <div class="col-12 col-lg-9  ">
-                  <div class="logo-nameSite d-flex align-items-center">
-                      <img src="image2.png" alt="logo" class="logo rounded-circle p-2">
-                      <div class="name-site ">название сайта</div>
+                  <div class="logo-nameSite col-sm-8 mb-3" style="background-color: #6495ed;">
+                    <div class="d-flex justify-content-around justify-content-sm-start">
+                      <img src="image2.png" alt="logo" class="logo rounded-circle p-2" >
+                      <div class="name-site align-self-center align-self-sm-end " >название сайта</div>
+                    </div>
+                      
                   </div>
-              </div>
-              <div class="col-12 col-lg-3  mt-3">
-                  <nav class="menu-links-nav">
-                      <ul class="links-content d-flex list-unstyled p-1 justify-content-between">
-                          <li class="nav-item"><a class="nav-link" href="#link">ссылки</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#table">таблица</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#form">форма</a></li>
-                          <li class="nav-item"><a class="nav-link" href="#footer">footer</a></li>
+                  <div class="menu-links-nav  col-sm-4  mb-3 " style="background-color: #6495ed;">
+                    <nav  >
+                      <ul class="links-content d-sm-flex list-unstyled justify-content-sm-end gap-2 flex-wrap">
+                          <li class="nav-item "><a class="nav-link" href="#link">ссылки</a></li>
+                          <li class="nav-item "><a class="nav-link" href="#table">таблица</a></li>
+                          <li class="nav-item "><a class="nav-link" href="#form">форма</a></li>
+                          <li class="nav-item "><a class="nav-link" href="#footer">footer</a></li>
                       </ul>
                   </nav>
-              </div>
+                  </div>
+                  
           </div>
-        </div>
     </header>
 
-  <div class="flex-box">
-  <div class="container mx-auto col-12 col-sm-10">
-    <div class="row offset-md-auto">
-      <div class="row mb-3 order-2 order-sm-1 "style="background-color: #6495ed;">
-          <div >
-            <div class="content-block p-3" id="link">
-							<ul  class="center-both">
+  <div class=" container-sm d-grid col-sm-7">
+        <div class="row mb-3 order-2 order-sm-1 ">
+              <div class="py-2" id="link" style="background-color: #6495ed;">
+              <ul  class="center-both">
 								<li><a href="http://www.kubsu.ru/index.php" target="_blank">КубГу</a></li>
 								<li id="KUBIK"><a href="https://www.kubsu.ru/index.php" target="_blank">КубГу</a></li>
 								<li id="top"><a href="http://www.kubsu.ru/index.php"><img src="image.jpg" alt="image" width="300" height="300"/></a></li>
@@ -75,130 +72,132 @@
 								</li>
 								<li><a href="ftp://user:pass123@tavalik.ru/Temp/file.txt">Ссылка на файл на сервер FTP с авторизацией</a></li>
 							</ul>
-          </div>
+            
+              </div>
         </div>
+        <div class="row mb-3 order-1 order-sm-2">  
+              <div class="py-2" id="table" style="background-color: #6495ed;">
+                
+                <table class="caption-top">
+                  <caption class="text-center" style="background-color: #84a4e0;" >Таблица</caption>
+                  <tbody >
+                    
+                    <tr class="row-neChet">
+                      <td rowspan="6" style="background-color: #2e559d;">Колонка 1</td>
+                      <td style="background-color: #2e559d;">Колонка 2</td>
+                      <td style="background-color: #2e559d;">Колонка 3</td>
+                      <td style="background-color: #2e559d;">Колонка 4</td>
+                      
+                    </tr>
+                    <tr class="row-Chet" style="background-color: #425477;">
+                      <td > 1</td>
+                      <td > 2</td>
+                      <td > 3</td>
+                      
+                      
+                    </tr>
+                    <tr class="row-neChet" style="background-color: #687898;">
+                      <td > 1</td>
+                      <td > 2</td>
+                      <td > 3</td>
+                      
+                      
+                    </tr>
+                    <tr class="row-Chet" style="background-color: #425477;">
+                      <td colspan="5" align="center">единое</td>
+                      
+                    </tr>
+                    <tr class="row-neChet" style="background-color: #687898;">
+                      <td > 1</td>
+                      <td > 2</td>
+                      <td > 3</td>
+                      
+                      
+                    </tr>
+                    <tr class="row-Chet" style="background-color: #425477;">
+                      <td> 1</td>
+                      <td> 2</td>
+                      <td> 3</td>
+                      
+                      
+                    </tr>
+                  </tbody>
+                </table>
+            
+              </div>
         </div>
-      <div class="row mb-3 order-1 order-sm-2 "style="background-color: #6495ed;">
-          <div>
-            <div class="content-block p-3" id="table">
-              <table>
-                <caption>Таблица</caption>
-                <tbody>
-                  <tr class="row-neChet">
-                    <td rowspan="6">Колонка 1</td>
-                    <td>Колонка 2</td>
-                    <td>Колонка 3</td>
-                    <td>Колонка 4</td>
-                    
-                  </tr>
-                  <tr class="row-Chet">
-                    <td> 1</td>
-                    <td> 2</td>
-                    <td> 3</td>
-                    
-                    
-                  </tr>
-                  <tr class="row-neChet">
-                    <td> 1</td>
-                    <td> 2</td>
-                    <td> 3</td>
-                    
-                    
-                  </tr>
-                  <tr class="row-Chet" >
-                    <td colspan="5" align="center">единое</td>
-                    
-                  </tr>
-                  <tr class="row-neChet">
-                    <td> 1</td>
-                    <td> 2</td>
-                    <td> 3</td>
-                    
-                    
-                  </tr>
-                  <tr class="row-Chet">
-                    <td> 1</td>
-                    <td> 2</td>
-                    <td> 3</td>
-                    
-                    
-                  </tr>
-                </tbody>
-              </table>
-          </div>
-        </div>
-        </div>
-        <div class="row mb-3 order-3 order-sm-3 "style="background-color: #6495ed;">
-          <div >
-            <div class="content-block p-3" id="form">
-              <h2>Форма</h2>
-                  <form action="https://www.example.com" method="POST"  >
-                    <label>
-                      ФИО:<br>
-                      <input name="field-name-1" placeholder="Иванов Иван Иванович" type="name">
+        <div class="row mb-3 order-3 order-sm-3 " >
+              <div class="py-2" id="form" style="background-color: #6495ed;">
+                <h2>Форма</h2>
+                    <form action="https://www.example.com" method="POST"  >
+                      <label>
+                        ФИО:<br>
+                        <input name="field-name-1" placeholder="Иванов Иван Иванович" type="name">
+                      </label><br>
+                      <label>
+                        Телефон:<br>
+                          <input name="field-number" placeholder="+7 (999)-435-90-44" type="number">
+                      </label><br>
+                      <label>
+                        e-mail:<br>
+                        <input name="field-email" placeholder="opachki@gmail.com" type="email">
                     </label><br>
                     <label>
-                      Телефон:<br>
-                        <input name="field-number" placeholder="+7 (999)-435-90-44" type="number">
+                      Дата рождения:<br>
+                      <input name="field-date" value="2002-11-11" type="date">
+                    </label><br>
+                    Пол:<br>
+                    <label>
+                        <input type="radio" name="radio-group-2" value="М">
+                        М
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-group-2" value="Ж">
+                        Ж
+                    </label>
                     </label><br>
                     <label>
-                      e-mail:<br>
-                      <input name="field-email" placeholder="opachki@gmail.com" type="email">
-                  </label><br>
-                  <label>
-                    Дата рождения:<br>
-                    <input name="field-date" value="2002-11-11" type="date">
-                  </label><br>
-                  Пол:<br>
-                  <label>
-                      <input type="radio" name="radio-group-2" value="М">
-                      М
-                  </label>
-                  <label>
-                      <input type="radio" name="radio-group-2" value="Ж">
-                      Ж
-                  </label>
-                  </label><br>
-                  <label>
-                    Любимый язык программирования:
-                    <br/>
-                    <select name="field-name[]" multiple="multiple" size="5">
-                      <option value="Значение 1" >Pascal</option>
-                      <option value="Значение 2" >C</option>
-                      <option value="Значение 3" >C++</option>
-                      <option value="Значение 4">JavaScript</option>
-                      <option value="Значение 5">PHP</option>
-                      <option value="Значение 6">Python</option>
-                      <option value="Значение 7">Java</option>
-                      <option value="Значение 8">Haskel</option>
-                      <option value="Значение 9">Clojure</option>
-                      <option value="Значение 10">Prolog</option>
-                      <option value="Значение 11">Scala</option>
-                    </select>
-                  </label><br>
-                  <label>
-                    Биография:<br>
-                    <textarea name="bio"> </textarea>
-                  </label><br>
-                  С контрактом ознакомлен(а):<br>
-                          <label>
-                              <input type="checkbox" checked="checked" name="check-1">
-                          </label><br>
-                          <input type="submit" value="Отправить"/>
-                  </form>
-            </div>
-          </div>
-          </div>
-    </div>
-  </div>
-</div>
+                      Любимый язык программирования:
+                      <br/>
+                      <select name="field-name[]" multiple="multiple" size="5">
+                        <option value="Значение 1" >Pascal</option>
+                        <option value="Значение 2" >C</option>
+                        <option value="Значение 3" >C++</option>
+                        <option value="Значение 4">JavaScript</option>
+                        <option value="Значение 5">PHP</option>
+                        <option value="Значение 6">Python</option>
+                        <option value="Значение 7">Java</option>
+                        <option value="Значение 8">Haskel</option>
+                        <option value="Значение 9">Clojure</option>
+                        <option value="Значение 10">Prolog</option>
+                        <option value="Значение 11">Scala</option>
+                      </select>
+                    </label><br>
+                    <label>
+                      Биография:<br>
+                      <textarea name="bio"> </textarea>
+                    </label><br>
+                    С контрактом ознакомлен(а):<br>
+                            <label>
+                                <input type="checkbox" checked="checked" name="check-1">
+                            </label><br>
+                            <input type="submit" value="Отправить"/>
+                    </form>
+              
+              </div>
+        </div>
+      </div>
+  
+ 
 
-  <footer class="footer" id="footer">
-    <div class="container p-3">
-        <p class="text-center">Я — человек без амбиций: мне деньги не нужны. Главное, чтоб хватало на обычную жизнь</p>
-        <p class="text-center">(с) Виталий Цаль</p>
-    </div>
-  </footer>
+
+
+    <footer class="footer pt-2 d-grid " id="footer" style="background-color: #6495ed;">
+      <div class="mx-auto"> 
+          <p >Всем советую быть мизантропом. Хотя, если бы все были мезантропами, то кто бы мне донатил RoflanZadymolsa?</p>
+          <p >(с) Виталий Цаль</p>
+        </div>
+    </footer>
   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
