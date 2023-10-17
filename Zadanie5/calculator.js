@@ -19,20 +19,20 @@ function calculatePrice() {
 
 function getProductPrice(productName) {
   switch (productName) {
-    case "Мясо1":
-      return 159.0;
-    case "Мясо2":
-      return 149.0;
-    case "Мясо3":
-      return 239.0;
-    case "Мясо4":
-      return 249.0;
-    case "Мясо5":
-      return 169.0;
-    case "Мясо6":
-      return 145.0;
-    case "Мясо7":
-      return 315.0;
+    case "Вид1":
+      return 4199.0;
+    case "Вид2":
+      return 	16299.0;
+    case "Вид3":
+      return 16299.0;
+    case "Вид4":
+      return 23999.0;
+    case "Вид5":
+      return 	26199.0;
+    case "Вид6":
+      return 27999.0;
+    case "Вид7":
+      return 34499.0;
 
     default:
       return 0.0;
