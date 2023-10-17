@@ -7,13 +7,13 @@
   align-items: center;
 }
 .price-content {
-  background-color: beige;
+  background-color: #F5FFFA;
 }
 .product-text {
-  background-color: aquamarine;
+  background-color: #8B0000;
 }
 .price-text {
-  background-color: chocolate;
+  background-color: #191970;
 }
 .flex-box-content {
   padding-left: 5vw;
