@@ -1,21 +1,29 @@
-function calculatePrice() {
+function calculatePrice(event) {
+  event.preventDefault();
   let selectedProduct = document.getElementById("selection").value;
   let amount = document.getElementById("amount").value;
-  let isNumber = /^[0-9]*(\.[0-9]+)?$/.test(amount);
-  let price = getProductPrice(selectedProduct);
 
-  if (isNumber) {
-    let parsedAmount = parseFloat(amount);
-    if (Number.isInteger(parsedAmount)) {
-      let totalCost = price * parsedAmount;
-      document.getElementById("result").textContent =
-        "ИТОГО: " + totalCost.toFixed(2) + " руб";
-    }
-  } else {
+  let isDecimal = /^-?\d+\.\d+$/.test(amount);
+  let isZero = amount.trim()[0] == "0" ? 1 : 0;
+  let isNegative = parseFloat(amount) < 0 ? 1 : 0;
+  let isString = isNaN(amount) ? 1 : 0;
+
+  if (isNegative || isString || isZero || isDecimal) {
     document.getElementById("result").textContent =
       "Введите корректное количество товара.";
+  } else {
+    let price = getProductPrice(selectedProduct);
+    let parsedAmount = parseFloat(amount);
+    let totalCost = price * parsedAmount;
+    document.getElementById("result").textContent =
+      "ИТОГО: " + totalCost.toFixed(2) + " руб";
   }
 }
+
+window.addEventListener("DOMContentLoaded", function (event) {
+  let payButton = document.getElementById("pay-button");
+  payButton.addEventListener("click", calculatePrice);
+});
 
 function getProductPrice(productName) {
   switch (productName) {
