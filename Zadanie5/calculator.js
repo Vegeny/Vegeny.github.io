@@ -7,8 +7,9 @@ function calculatePrice(event) {
   let isZero = amount.trim()[0] == "0" ? 1 : 0;
   let isNegative = parseFloat(amount) < 0 ? 1 : 0;
   let isString = isNaN(amount) ? 1 : 0;
+  let isspace = amount.trim() == "" ? 1 : 0;
 
-  if (isNegative || isString || isZero || isDecimal) {
+  if (isNegative || isString || isZero || isDecimal || isspace) {
     document.getElementById("result").textContent =
       "Введите корректное количество товара.";
   } else {
