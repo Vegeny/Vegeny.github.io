@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <div class="flex-box">
+      <div class="price-content">
+        <h2 align="center">DNS</h5>
+        <div class="flex-box-content price-table">
+            <table >
+                <tbody>
+                <tr>
+                    <td class="product-text" align="center">Видеокарты</td>
+                    <td class="price-text" align="center">Цены</td>
+                </tr>
+                <tr>
+                    <td>
+                    KFA2 GeForce 210
+                    </td>
+                    <td>4199.00 руб</td>
+                </tr>
+                <tr>
+                    <td>Radeon rx 6500 XT</td>
+                    <td>16299.00 руб</td>
+                </tr>
+                <tr>
+                    <td>
+                    kfa2 gtx 1650 black
+                    </td>
+                    <td>16299.00 руб</td>
+                </tr>
+                <tr>
+                    <td>
+                    nvidia quadro t400
+                    </td>
+                    <td>23999.00 руб</td>
+                </tr>
+                <tr>
+                    <td>
+                    radeon rx 6600
+                    </td>
+                    <td>26199.00 руб</td>
+                </tr>
+                <tr>
+                    <td>
+                        palit geforce rtx 3050
+                    </td>
+                    <td>27999.00 руб</td>
+                </tr>
+                <tr>
+                    <td>asrock intel arc a770 phantom gaming d oc</td>
+                    <td>34499.00 руб</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pay-product flex-box-content">
+            <label>Выберите товар:</label>
+            <select id="selection" name="selection">
+                <option value="Вид1">KFA2 GeForce 210</option>
+                <option value="Вид2">Radeon rx 6500 XT</option>
+                <option value="Вид3">kfa2 gtx 1650 black</option>
+                <option value="Вид4">nvidia quadro t400</option>
+                <option value="Вид5">radeon rx 6600</option>
+                <option value="Вид6">palit geforce rtx 3050</option>
+                <option value="Вид7">asrock intel arc a770 phantom gaming d oc</option>
+            </select>
+            <label>Количество товара:</label>
+            <input id="amount" type="text" name="amount" placeholder="Введите количество товара">
+            <button id="pay-button" name="pay-button">Рассчитать стоимость</button>
+            <div align="center" id="result" name="result">ИТОГО: </div>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
