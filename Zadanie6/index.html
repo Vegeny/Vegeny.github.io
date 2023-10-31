@@ -33,49 +33,46 @@
                     </td>
                     <td>16299.00 руб</td>
                 </tr>
-                <tr>
-                    <td>
-                    nvidia quadro t400
-                    </td>
-                    <td>23999.00 руб</td>
-                </tr>
-                <tr>
-                    <td>
-                    radeon rx 6600
-                    </td>
-                    <td>26199.00 руб</td>
-                </tr>
-                <tr>
-                    <td>
-                        palit geforce rtx 3050
-                    </td>
-                    <td>27999.00 руб</td>
-                </tr>
-                <tr>
-                    <td>asrock intel arc a770 phantom gaming d oc</td>
-                    <td>34499.00 руб</td>
-                </tr>
                 </tbody>
             </table>
         </div>
         <div class="pay-product flex-box-content">
             <label>Выберите товар:</label>
             <select id="selection" name="selection">
-                <option value="Вид1">KFA2 GeForce 210</option>
-                <option value="Вид2">Radeon rx 6500 XT</option>
-                <option value="Вид3">kfa2 gtx 1650 black</option>
-                <option value="Вид4">nvidia quadro t400</option>
-                <option value="Вид5">radeon rx 6600</option>
-                <option value="Вид6">palit geforce rtx 3050</option>
-                <option value="Вид7">asrock intel arc a770 phantom gaming d oc</option>
+                <option value="1">KFA2 GeForce 210</option>
+                <option value="2">Radeon rx 6500 XT</option>
+                <option value="3">kfa2 gtx 1650 black</option>
             </select>
             <label>Количество товара:</label>
             <input id="amount" type="text" name="amount" placeholder="Введите количество товара">
-            <button id="pay-button" name="pay-button">Рассчитать стоимость</button>
-            <div align="center" id="result" name="result">ИТОГО: </div>
+						<div id="checkboxes" style="display: block;" name="amd">
+							<label>
+								<input type="checkbox" name="prop1">
+								"Процессор fx 4300 (+2350.00 руб)"
+							</label>
+							<label>
+								<input type="checkbox" name="prop2">
+								"Процессор ryzen 5 4500 (+9299.00 руб)"
+							</label>
+						</div>
+						<div id="radios" style="display: none;" name="operativka">
+							<label>
+								<input type="radio" name="prodOption" value="option1">
+								"kingston furi 8 гб (+2000.00 руб)"
+							</label>
+							<label>
+								<input type="radio" name="prodOption" value="option2">
+								"radeon r9 16 гб (+3200.00 руб)"
+							</label>
+							<label>
+								<input type="radio" name="prodOption" value="option3">
+								"adata xpg 16 гб (+2099.00 руб)"
+							</label>
+						</div>
+						<div id="prodPrice">Введите корректное количество товара</div>
         </div>
       </div>
     </div>
-    <script src="calculator.js"></script>
+    <script src="productCheck.js"></script>
   </body>
 </html>
