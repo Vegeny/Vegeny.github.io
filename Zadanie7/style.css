@@ -1,0 +1,13 @@
+img {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+}
+.your-class {
+  margin-top: 20vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+body {
+  background-color: rgb(83, 79, 74);
+}
